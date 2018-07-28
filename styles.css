@@ -1,0 +1,15 @@
+/* How to Create CSS Varibles */
+
+:root {
+    /* This defines CSS Variables that can be used throughout the CSS file */
+    --header-height: 150px;
+    --footer-height: 250px;
+    --menu-height: calc(100vh - var(--header-height) - var(--footer-height));
+    --content-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+.header {
+    /* This is where the variable of --header-height is used */
+    height: var(--header-height);
+    width: 100%;
+    background-color: red;
+}
